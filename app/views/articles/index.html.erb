@@ -1,0 +1,21 @@
+<h1>Listado de Articulos</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <% @articles.each do |articulo| %>
+            <tr>
+                <td><%= articulo.title %></td>
+                <td><%= articulo.description %></td>
+                <td>PlaceHolder</td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
