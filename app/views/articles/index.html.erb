@@ -1,21 +1,21 @@
-<h1>Listado de Articulos</h1>
+<h1>Articles listing page</h1>
 
 <table>
-    <thead>
-        <tr>
-            <th>Titulo</th>
-            <th>Descripcion</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    
-    <tbody>
-        <% @articles.each do |articulo| %>
-            <tr>
-                <td><%= articulo.title %></td>
-                <td><%= articulo.description %></td>
-                <td>PlaceHolder</td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td>Placeholder</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> 
